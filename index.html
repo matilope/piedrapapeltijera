@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="img/favicon/favicon.jpg">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/estilos.css">
+
+  <title>Piedra, papel o tijera</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark colorpaleta">
+    <a class="navbar-brand" href="#Home" name="Home">Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#juega">Juega<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#reglas">Reglas del juego</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#comentarios">Comentarios</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container cuerpocontenido">
+    <section class="juego">
+      <a name="juega">
+        <h1 class="tituloprincipal">Piedra, papel o tijera</h1>
+      </a>
+      <div class="resultado"></div>
+      <div class="opcionpcuser"></div>
+      <div class="container">
+        <div class="row">
+          <div class="opciones c-col col-4 col-sm-4 col-md-4 col-lg-4 textodecorativo">
+            <img id="piedra" class="imagenresponsive" data="1" src="img/piedra.png"
+              alt="Imagen ilustrativa de la piedra que el usuario puede elegir para comenzar a jugar.">
+          </div>
+          <div class="opciones c-col col-4 col-sm-4 col-md-4 col-lg-4 textodecorativo">
+            <img id="papel" class="imagenresponsive" data="2" src="img/papel.png"
+              alt="Imagen ilustrativa del papel que el usuario puede elegir para comenzar a jugar.">
+          </div>
+          <div class="opciones c-col col-4 col-sm-4 col-md-4 col-lg-4 textodecorativo">
+            <img id="tijera" class="imagenresponsive" data="3" src="img/tijera.png"
+              alt="Imagen ilustrativa de la tijera que el usuario puede elegir para comenzar a jugar.">
+          </div>
+          <div class="c-col col-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="aviso">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="principal">
+      <div class="container">
+        <a name="reglas">
+          <h2 class="tituloreglas" name="reglas">Reglas del juego</h2>
+        </a>
+        <div class="row">
+          <div class="c-col col-6 col-sm-6 col-md-3 col-lg-3 textodecorativo">
+            <img class="imagenresponsive" src="img/piedra.png"
+              alt="Imagen ilustrativa mostrando al ganador, en este caso la piedra.">
+            <p>La piedra aplasta la tijera.</p>
+          </div>
+          <div class="c-col col-6 col-sm-6 col-md-3 col-lg-3 textodecorativo">
+            <img class="imagenresponsive" src="img/tijera.png"
+              alt="Imagen ilustrativa mostrando al ganador, la tijera.">
+            <p>La tijera corta el papel.</p>
+          </div>
+          <div class="c-col col-6 col-sm-6 col-md-3 col-lg-3 textodecorativo">
+            <img class="imagenresponsive" src="img/papel.png" alt="Imagen ilustrativa mostrando al ganador, el papel.">
+            <p>El papel envuelve la piedra.</p>
+          </div>
+          <div class="c-col col-6 col-sm-6 col-md-3 col-lg-3 textodecorativo">
+            <img class="imagenresponsive" src="img/empate.jpg"
+              alt="Imagen ilustrativa mostrando un empate en el juego.">
+            <p>En caso de empate, se vuelve a jugar.</p>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="container">
+    <div class="row">
+      <div class="c-col col-12 col-sm-12 col-md-12 col-lg-12">
+
+        <div class="contendor-comentarios">
+          <a name="comentarios">
+            <h2 class="h2comentario">Comentarios</h2>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h3>Footer</h3>
+          <p>Página creada por Matías López.</p>
+          <a class="footerhref" href="#Home">Volver arriba</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-center">© 2020 Copyright</div>
+  </footer>
+
+  <script src="js/jquery/jquery-3.5.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/comentarios.js"></script>
+
+</body>
+
+</html>
